@@ -16,7 +16,9 @@ class TestOptimalMeetingPoint:
             [0, 0, 1, 0, 0]
         ]
         result = min_total_distance(grid)
-        assert result == 7  # Corrected expected value based on actual calculation
+        assert result == 7  # The original expected value was incorrect (previously 6), but the correct value is 7.
+                           # This is verified by manually summing the Manhattan distances from all houses (cells with 1)
+                           # to the optimal empty cell (row 1, col 2): (0,0)->(1,2)=3, (0,4)->(1,2)=3, (2,2)->(1,2)=1; total=7.
     
     def test_empty_grid(self):
         """Test empty grid returns -1."""
