@@ -23,7 +23,7 @@ grid = [
 ]
 
 result = min_total_distance(grid)
-print(result)  # Output: 6
+print(result)  # Output: 7
 ```
 
 ## Algorithm Overview
